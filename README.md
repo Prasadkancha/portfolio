@@ -21,13 +21,15 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 
 portfolio-website/
 │
-├── index.html # Main HTML file
-├── styles.css # CSS styles
-├── script.js # JavaScript functionality
-├── images/ # All images used in the site
-│ ├── image-prasad.jpg
-│ ├── weather-application.jpg
-│ └── tic-tac-toe.jpg
-├── screenshots/ # Project preview screenshots
-│ └── preview.png
-└── README.md # Project documentation
+├── index.html              # Main HTML file
+├── styles.css              # CSS styles
+├── script.js               # JavaScript functionality
+│
+├── images/                 # Directory for images
+│   ├── image-prasad.jpg
+│   ├── weather-application.jpg
+│   └── tic-tac-toe.jpg
+│   
+│
+└── README.md               # Project documentation
+
