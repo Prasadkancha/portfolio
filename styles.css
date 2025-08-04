@@ -372,7 +372,7 @@ footer {
     }
 
     nav {
-        padding: 0.8rem;
+        padding: 2rem;
     }
     
     .nav-left {
@@ -435,7 +435,7 @@ footer {
 
     .home-right img {
         width: 200px;
-        height: 270px;
+        height: 200px;
     }
 
     section {
@@ -459,7 +459,7 @@ footer {
 
     .home-right img {
         width: 250px;
-        height: 350px;
+        height: 250px;
     }
 
     .project {
