@@ -58,8 +58,8 @@ p {
 
 /* Navigation Bar */
 nav {
-    background-color: var(--primary-color);
-    padding: 1rem;
+    background-color:#adadfa; 
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,10 +83,12 @@ nav {
     display: flex;
     margin: 0;
     padding-right: 1rem;
+    color: #0021f9;
 }
 
 .nav-right li {
     margin-left: 1.25rem;
+    color: #3141f1;
 }
 
 .nav-right a {
@@ -95,9 +97,8 @@ nav {
     font-weight: bold;
     transition: var(--transition);
 }
-
 .nav-right a:hover {
-    color: #fff;
+    color: #780000;
     text-decoration: underline;
 }
 
@@ -132,7 +133,7 @@ nav {
 }
 
 .home-left h1 span {
-    color: #5865F2;
+    color: #2b327f;
     position: relative;
 }
 
@@ -158,9 +159,9 @@ nav {
 }
 
 .home-right img {
-    width: 300px;
-    height: 400px;
-    border-radius: 10px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
     box-shadow: var(--shadow);
     transition: var(--transition);
     object-fit: cover;
@@ -178,7 +179,7 @@ section {
 #about, #projects, #skills, #contact {
     max-width: 1100px;
     margin: 2rem auto;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: var(--shadow);
 }
@@ -212,7 +213,7 @@ section h2::after {
     flex: 0 0 calc(50% - 2rem);
     max-width: 400px;
     margin-bottom: 1.25rem;
-    background-color: #fff;
+    background-color: #f5f6f9fa;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -226,7 +227,7 @@ section h2::after {
 
 .project h3 {
     padding: 1rem;
-    background-color: var(--primary-color);
+    background-color:#8fa9f9fa;
     color: #333;
 }
 
@@ -257,7 +258,7 @@ section h2::after {
 }
 
 .skill-item {
-    background: var(--primary-color);
+    background: #f5f6f9fa;
     padding: 0.8rem 1.2rem;
     border-radius: 5px;
     font-weight: bold;
@@ -267,7 +268,8 @@ section h2::after {
 
 .skill-item:hover {
     transform: translateY(-5px);
-    background: #9ba6f0;
+    background: #0021f9;
+    color: #f9f9f9;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
