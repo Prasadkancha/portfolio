@@ -58,7 +58,7 @@ p {
 
 /* Navigation Bar */
 nav {
-    background-color:#adadfa; 
+    background-color:#adadfa90; 
     padding: 2rem;
     display: flex;
     justify-content: space-between;
@@ -466,3 +466,4 @@ footer {
         flex: 0 0 calc(50% - 1rem);
     }
 }
+
