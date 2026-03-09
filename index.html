@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prasad Kancha - Portfolio</title>
+    <meta name="description" content="Prasad Kancha - Full Stack Developer Portfolio. Expertise in Java, Web Development, React, Python, and Problem-Solving.">
+    <meta name="keywords" content="developer, portfolio, Java, web development, React, Python">
+    <meta name="author" content="Prasad Kancha">
+    <meta property="og:title" content="Prasad Kancha - Portfolio">
+    <meta property="og:description" content="Full Stack Developer with expertise in Java, Web Development, and Problem-Solving">
+    <meta property="og:type" content="website">
+    <title>Prasad Kancha - Full Stack Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav id="navbar">
         <div class="nav-left">Prasad Kancha</div>
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <!-- Sun Icon (Light Mode) -->
+            <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (Dark Mode) -->
+            <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
         <button class="hamburger" aria-label="Menu">☰</button>
         <ul class="nav-right">
             <li><a href="#home" >Home</a></li>
@@ -18,14 +42,18 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    
+
     <section id="home">
         <div class="home-left fade-in">
             <h1>Hello, I'm <span>Prasad Kancha</span></h1>
-            <p>A passionate developer with expertise in Java, Web Development, and Problem-Solving.</p>
+            <p class="typing-text">A passionate developer with expertise in Java, Web Development, and Problem-Solving.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
         </div>
         <div class="home-right fade-in">
-            <img src="img-prasad.jpg" alt="Prasad Kancha">
+            <img src="img-prasad.jpg" alt="Prasad Kancha - Full Stack Developer" loading="lazy">
         </div>
     </section>
     
@@ -36,57 +64,179 @@
     
     <section id="projects" class="fade-in">
         <h2>Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="game">Game</button>
+        </div>
         <div class="proje">
-            <div class="project">
+            <div class="project" data-category="web">
                 <h3>Weather Application</h3>
-                <a href="https://github.com/Prasadkancha/weather-application" target="_blank">
-                    <img src="weather-application.jpg" alt="Weather Application Screenshot">
+                <p class="project-desc">A real-time weather app built with vanilla JavaScript and API integration. Get current weather, forecasts, and location-based information.</p>
+                <a href="https://github.com/Prasadkancha/weather-application" target="_blank" rel="noopener noreferrer">
+                    <img src="weather-application.jpg" alt="Weather Application Screenshot" loading="lazy">
                 </a>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">API</span>
+                    <span class="tag">HTML/CSS</span>
+                </div>
             </div>
-            <div class="project">
+            <div class="project" data-category="game">
                 <h3>Tic Tac Toe Game</h3>
-                <a href="https://github.com/Prasadkancha/Tic-tac-toe" target="_blank">
-                    <img src="tic tac toe.jpg" alt="Tic Tac Toe Game Screenshot">
+                <p class="project-desc">Interactive Tic Tac Toe game with responsive design. Play against the computer with intelligent game logic.</p>
+                <a href="https://github.com/Prasadkancha/Tic-tac-toe" target="_blank" rel="noopener noreferrer">
+                    <img src="tic tac toe.jpg" alt="Tic Tac Toe Game Screenshot" loading="lazy">
                 </a>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Game Logic</span>
+                    <span class="tag">UI/UX</span>
+                </div>
             </div>
-             <div class="project">
-                <h3>Food Application</h3>
-                <a href="https://github.com/Prasadkancha/Food-delivery-app" target="_blank">
-                    <img src="food-hero.jpg" alt="Food Application image">
+            <div class="project" data-category="web">
+                <h3>Food Delivery Application</h3>
+                <p class="project-desc">Full-featured food delivery platform with menu browsing, cart management, and order placement functionality.</p>
+                <a href="https://github.com/Prasadkancha/Food-delivery-app" target="_blank" rel="noopener noreferrer">
+                    <img src="food-hero.jpg" alt="Food Application image" loading="lazy">
                 </a>
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">UI Design</span>
+                    <span class="tag">State Management</span>
+                </div>
             </div>
         </div>
     </section>
     
     <section id="skills" class="fade-in">
         <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-item">Java</div>
-            <div class="skill-item">HTML</div>
-            <div class="skill-item">CSS</div>
-            <div class="skill-item">JavaScript</div>
-            <div class="skill-item">Reactjs</div>
-            <div class="skill-item">Python</div>
-            <div class="skill-item">MySQL</div>
-            <div class="skill-item">Node.js</div>
-            <div class="skill-item">Express.js</div>
-            <div class="skill-item">Spring Boot</div>
-            <div class="skill-item">Problem solving skills</div>
-            <div class="skill-item">Analytical skills</div>
-            <div class="skill-item">Communication skills</div>
+        <div class="skills-wrapper">
+            <div class="skills-category">
+                <h3>Technical Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">React</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">HTML/CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Soft Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-name">Problem Solving</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Analytical Skills</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Communication</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Teamwork</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
     <section id="contact" class="fade-in">
         <h2>Contact</h2>
-        <div class="contact-info">
-            <p> Phone: <a href="tel:7075856867">7075856867</a></p>
-            <p> Email: <a href="mailto:prasadkancha910@gmail.com">prasadkancha910@gmail.com</a></p>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p><strong>Phone:</strong> <a href="tel:7075856867">707-585-6867</a></p>
+                <p><strong>Email:</strong> <a href="mailto:prasadkancha61@gmail.com">prasadkancha61@gmail.com</a></p>
+                <p><strong>Resume:</strong> <a href="https://drive.google.com/file/d/17UQ96FHkA3F4Vlq6afTvPvbLamv2m13L/view?usp=sharing" target="_blank">Download Resume</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/Prasadkancha" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <p class="form-message" id="formMessage"></p>
+            </form>
         </div>
     </section>
     
     <footer>
-        <p>Created by Prasad &copy; 2025</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Prasad Kancha</h4>
+                <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/Prasadkancha" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="mailto:prasadkancha61@gmail.com" aria-label="Email">Email</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Prasad Kancha. All rights reserved. | Designed with care</p>
+        </div>
     </footer>
     
     <a href="#home" class="back-to-top">↑</a>
@@ -94,12 +244,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
